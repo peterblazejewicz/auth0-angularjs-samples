@@ -23,15 +23,11 @@
     $stateProvider
       .state('home', {
         url: '/',
-        controller: 'HomeController',
-        templateUrl: 'app/home/home.html',
-        controllerAs: 'vm'
+        component: 'home',
       })
       .state('callback', {
         url: '/callback',
-        controller: 'CallbackController',
-        templateUrl: 'app/callback/callback.html',
-        controllerAs: 'vm'
+        component: 'callback',
       });
 
     // Initialization for the angular-auth0 library
